@@ -296,15 +296,204 @@ header {
 /* секция reviews */
 
 .reviews {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0px;
+    width: 1920px;
+    height: 1166px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
 }
 
 .blocks__reviews {
+    /* display: flex;
+    flex-direction: column;
+    gap: 100%; */
+}
+
+.block-slider__reviews {
     display: flex;
     flex-direction: column;
-    gap: 100%;
+    align-items: center;
+    padding: 0px;
+    gap: 70px;
+    width: 1180px;
+    height: 802px;
+    margin-top:64px;
 }
+
+/* слайдер */
+
+.itcss_item-feedback {
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 70px 143px;
+    gap: 54px;
+    width: 1180px;
+    height: 666px;
+    background: #FFFFFF;
+    border: 2px solid #FFB600;
+    /* Тень */
+    box-shadow: 2px 8px 16px rgba(194, 198, 208, 0.06);
+    border-radius: 5px;
+}
+
+.itcss_item-feedback__block-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 460px;
+    height: 526px;
+}
+
+.itcss_item-feedback__block-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    width: 380px;
+    height: 498px;
+}
+
+.itcss_item-feedback__block-text_header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 460px;
+    height: 156px;
+}
+
+.itcss_item-feedback__block-text_header-quotes{
+    width: 40px;
+    height: 40px;
+    opacity: 0.9;
+}
+
+.itcss_item-feedback__block-text_header h4 {
+    width: 460px;
+    height: 92px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 143%;
+    color: #2E363E;
+}
+
+.itcss_item-feedback__block-text_main p {
+    width: 430px;
+    height: 346px;
+    color: #2E363E;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 170%;
+}
+
+.itcss_item-feedback__block-img img {
+    box-sizing: border-box;
+    width: 380px;
+    height: 380px;
+    background: #F2F6FA;
+    border: 2px solid #FFB600;
+    border-radius: 1000px;
+}
+
+.itcss_item-feedback__block-img-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+    width: 191px;
+    height: 88px;
+}
+
+.feedback__user-name {
+    width: 191px;
+    height: 41px;
+    color: #2E363E;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 143%;
+    /* or 40px */
+    text-align: center;
+}
+
+.feedback__user-city {
+    width: 120px;
+    height: 41px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 170%;
+    /* identical to box height, or 41px */
+    text-align: center;
+    color: #A6AEB6;
+}
+
+/* кнопки слайдера */
+
+.feedback__block-arrows {
+    width: 155.86px;
+    height: 66px;
+    /* background-color: red; */
+    margin: 70px auto 100px;
+}
+
+.feedback__arrow-prev{
+    width: 66px;
+    height: 66px;
+}
+.feedback__arrow-prev {
+    display: block;
+    float:left;
+    background: #0776A0;
+    border-radius: 100px;
+    width: 66px;
+    height: 66px;
+}
+
+a.itcss__control {
+    display: block;
+    width: 66px;
+    height: 66px;
+}
+
+a.itcss__control_prev {
+    background-image: url(/final_2.0/img/icon-arrow-left.svg);
+    float:left;
+}
+
+a.itcss__control_next {
+    background-image: url(/final_2.0/img/icon-arrow-right.svg);
+    float:right;
+}
+
+a.itcss__control_prev:hover {
+    background-image: url(/final_2.0/img/icon-arrow-left-yellow.svg);
+}
+
+a.itcss__control_next:hover {
+    background-image: url(/final_2.0/img/icon-arrow-right-yellow.svg);
+}
+
+/* Отключение индикаторов для слайдера */
+.itcss__indicators {
+    display: none;
+}
+
 
 /* секция set-reviews */
 
@@ -379,22 +568,37 @@ header {
     font-size: 40px;
 }
 
+/* секция contacts */
+
+.contacts {
+    width: 1920px;
+    height: 783px;
+}
+
 .flex-container__contacts{
     height: 783px;
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .flex-container__contacts-map{
-    width: 510px;
-    height: 622px;
+    width: 500px;
+    height: 608px;
     border: 5px dashed #0776A0;
     border-radius: 10px;
 }
 
+.flex-container__contacts-map:hover{
+    /* width: 500px;
+    height: 602px; */
+    border: 5px dashed #FFB600;
+    border-radius: 10px;
+}
+
 .flex-container__contacts-information{
-    width: 600px;
+    width: 580px;
+    height: 624px;
 } 
 
 .flex-container__contacts-information h2{
@@ -416,6 +620,7 @@ header {
 
 .flex-container__contacts-information__email{
     width: 500px;
+    height: 167px;
 }
 
 .icon-email{
@@ -441,3 +646,73 @@ header {
     text-decoration-line: underline;
 }
 
+/* секция footer(подвал) */
+
+.footer {
+    width: 1920px;
+    height: 144px;
+    background: #FFFFFF;
+}
+
+.footer__copyright {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 150%;
+    color: #7E868E;
+    width: 523px;
+    height: 32px;
+    float:left;
+}
+
+.flex-container__footer__social-links {
+    width: 139px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    float:right;
+    justify-content: space-between;
+}
+
+.social-links__vkontakte, 
+.social-links__instagram{
+    width: 48px;
+    height: 48px;
+    padding: 6px;
+}
+/* 
+.social-links__vkontakte a,
+.social-links__instagram a{
+    width: 36px;
+    height: 36px;
+} */
+
+.container-social-links__vkontakte{
+    background-image: url(/final_2.0/img/icon-vk.svg);
+    transition: .3x;
+    width: 36px;
+    height: 36px;
+}
+
+.container-social-links__instagram{
+    background-image: url(/final_2.0/img/icon-instagram.svg);
+    width: 36px;
+    height: 36px;
+}
+
+.flex-container__footer__social-links a{
+    padding:6px;
+}
+
+.container-social-links__vkontakte:hover {
+    background-image: url(/final_2.0/img/yellow-vk.svg);
+    width: 36px;
+    height: 36px;
+}
+
+.container-social-links__instagram:hover {
+    background-image: url(/final_2.0/img/yellow-inst.svg);
+    width: 36px;
+    height: 36px;
+}
