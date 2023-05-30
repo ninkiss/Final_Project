@@ -20,8 +20,32 @@
             });
           });
     </script> -->
+    <link rel="stylesheet" href="css/modalWindow.css">
 </head>
 <body>
+    <!-- модальное окно -->
+    <div class="modal-window" id="modalWindow">
+        <div class="modal-content" id="modalContent">
+            <div class="modal-header">
+                <h2>Написать отзыв</h2>
+                <div class="modal-close" id="modalClose">
+                    <img src="img/cross.svg" alt="cross">
+                </div>
+            </div>
+            <div class="modal-main">
+                <form action="">
+                    <input type="text" name="userName" id="userNameForm" placeholder="Ваше имя">
+                    <textarea name="review" id="reviewForm" cols="30" rows="10" placeholder="Отзыв"></textarea>
+                    <input type="submit" value="Отправить отзыв">
+                    <div class="approval-block">
+                        <input type="checkbox" name="approval" id="approvalForm">
+                        <label for="approvalForm">Соглашаюсь с <a href="#" class="approval-text">условиями передачи данных</a></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- модальное окно -->
     <header>
         <section class="heading">
             <div class="wrapper">
@@ -78,7 +102,7 @@
         <section class="pizza">
             <div class="wrapper">
                 <div class="blocks__pizza">
-                    <h2>Пицца</h2>
+                    <h2 class="universal-h2">Пицца</h2>
                     <div class="flex-container__pizza">
                         <div class="flex-item__flex-container">
                             <img src="img/Ветчинная.jpg" alt="Ветчинная">
@@ -310,5 +334,6 @@
         </section>
     </main>
     <script src="js/main.js"></script>
+    <script src="js/modalWindow.js"></script>
 </body>
 </html>
