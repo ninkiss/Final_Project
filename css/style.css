@@ -472,12 +472,12 @@ a.itcss__control {
 }
 
 a.itcss__control_prev {
-    background-image: url(/final_2.0/img/icon-arrow-left.svg);
+    background-image: url(/img/icon-arrow-left-yellow.svg);
     float:left;
 }
 
 a.itcss__control_next {
-    background-image: url(/final_2.0/img/icon-arrow-right.svg);
+    background-image: url(/img/icon-arrow-right-yellow.svg);
     float:right;
 }
 
@@ -689,14 +689,14 @@ a.itcss__control_next:hover {
 } */
 
 .container-social-links__vkontakte{
-    background-image: url(/final_2.0/img/icon-vk.svg);
+    background-image: url(/img/icon-vk.svg);
     transition: .3x;
     width: 36px;
     height: 36px;
 }
 
 .container-social-links__instagram{
-    background-image: url(/final_2.0/img/icon-instagram.svg);
+    background-image: url(/img/icon-instagram.svg);
     width: 36px;
     height: 36px;
 }
