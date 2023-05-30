@@ -7,21 +7,34 @@
     <title>Итоговый проект</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modalWindow.css">
     <link rel="stylesheet" href="css/simple-adaptive-slider.css">
     <script defer src="js/simple-adaptive-slider.min.js"></script>
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // инициализация слайдера
-            new ItcSimpleSlider('.itcss', {
-              loop: true,
-              autoplay: false,
-              interval: 5000,
-              swipe: true,
-            });
-          });
-    </script> -->
 </head>
 <body>
+    <!-- модальное окно -->
+    <div class="modal-window" id="modalWindow">
+        <div class="modal-content" id="modalContent">
+            <div class="modal-header">
+                <h2>Написать отзыв</h2>
+                <div class="modal-close" id="modalClose">
+                    <img src="img/cross.svg" alt="cross">
+                </div>
+            </div>
+            <div class="modal-main">
+                <form action="">
+                    <input type="text" name="userName" id="userNameForm" placeholder="Ваше имя">
+                    <textarea name="review" id="reviewForm" cols="30" rows="10" placeholder="Отзыв"></textarea>
+                    <input type="submit" value="Отправить отзыв">
+                    <div class="approval-block">
+                        <input type="checkbox" name="approval" id="approvalForm">
+                        <label for="approvalForm">Соглашаюсь с <a href="#" class="approval-text">условиями передачи данных</a></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- модальное окно -->
     <header>
         <section class="heading">
             <div class="wrapper">
@@ -197,7 +210,7 @@
                                         </div>
                                     </div>
                                     <div class="itcss_item-feedback__block-img">
-                                        <img src="img/contacto.jpg">
+                                        <img src="img/png-transparent-businessperson-management-skeppsbron-skatt-ab-organization-business.png">
                                         <div class="itcss_item-feedback__block-img-text">
                                             <p class="feedback__user-name">
                                                 Антон Немов
@@ -310,5 +323,6 @@
         </section>
     </main>
     <script src="js/main.js"></script>
+    <script src="js/modalWindow.js"></script>
 </body>
 </html>
