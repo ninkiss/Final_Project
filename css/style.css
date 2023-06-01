@@ -247,6 +247,8 @@ header {
 .about-us {
     padding-top: 100px;
     padding-bottom: 100px;
+    width: 1920px;
+    height: 614px;
 }
 
 .blocks__about-us {
@@ -472,21 +474,21 @@ a.itcss__control {
 }
 
 a.itcss__control_prev {
-    background-image: url(/final_2.0/img/icon-arrow-left.svg);
+    background-image: url(/img/icon-arrow-left.svg);
     float:left;
 }
 
 a.itcss__control_next {
-    background-image: url(/final_2.0/img/icon-arrow-right.svg);
+    background-image: url(/img/icon-arrow-right.svg);
     float:right;
 }
 
 a.itcss__control_prev:hover {
-    background-image: url(/final_2.0/img/icon-arrow-left-yellow.svg);
+    background-image: url(/img/icon-arrow-left-yellow.svg);
 }
 
 a.itcss__control_next:hover {
-    background-image: url(/final_2.0/img/icon-arrow-right-yellow.svg);
+    background-image: url(/img/icon-arrow-right-yellow.svg);
 }
 
 /* Отключение индикаторов для слайдера */
@@ -621,6 +623,7 @@ a.itcss__control_next:hover {
 .flex-container__contacts-information__email{
     width: 500px;
     height: 167px;
+    padding-right: 8px;
 }
 
 .icon-email{
@@ -664,6 +667,7 @@ a.itcss__control_next:hover {
     width: 523px;
     height: 32px;
     float:left;
+    margin-top: 55px;
 }
 
 .flex-container__footer__social-links {
@@ -673,6 +677,7 @@ a.itcss__control_next:hover {
     align-items: center;
     float:right;
     justify-content: space-between;
+    margin-top: 55px;
 }
 
 .social-links__vkontakte, 
@@ -689,14 +694,14 @@ a.itcss__control_next:hover {
 } */
 
 .container-social-links__vkontakte{
-    background-image: url(/final_2.0/img/icon-vk.svg);
+    background-image: url(/img/icon-vk.svg);
     transition: .3x;
     width: 36px;
     height: 36px;
 }
 
 .container-social-links__instagram{
-    background-image: url(/final_2.0/img/icon-instagram.svg);
+    background-image: url(/img/icon-instagram.svg);
     width: 36px;
     height: 36px;
 }
@@ -706,13 +711,13 @@ a.itcss__control_next:hover {
 }
 
 .container-social-links__vkontakte:hover {
-    background-image: url(/final_2.0/img/yellow-vk.svg);
+    background-image: url(/img/yellow-vk.svg);
     width: 36px;
     height: 36px;
 }
 
 .container-social-links__instagram:hover {
-    background-image: url(/final_2.0/img/yellow-inst.svg);
+    background-image: url(/img/yellow-inst.svg);
     width: 36px;
     height: 36px;
 }
