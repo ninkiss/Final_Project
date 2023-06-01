@@ -168,13 +168,13 @@ header {
     gap: 100px;
 }
 
-.blocks__pizza h2 {
+/* .blocks__pizza h2 {
     text-align: center;
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-bold);
     line-height: 133%;
     color: var(--black-color);
-}
+} */
 
 .flex-container__pizza {
     display: flex;
@@ -257,12 +257,12 @@ header {
     gap: 80px;
 }
 
-.blocks__about-us h2 {
+/* .blocks__about-us h2 {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-h2);
     line-height: 133%;
     text-align: center;
-}
+} */
 
 .flex-container__about-us {
     display: flex;
