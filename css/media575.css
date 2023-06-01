@@ -144,6 +144,12 @@
     } */
 
 
+            
+    
+    /* блок пиццы */
+
+
+
     .pizza {
         display: flex;
         flex-direction: column;
@@ -158,6 +164,22 @@
         top: 752px;
 
         background: #FFFFFF;
+    }
+
+    .blocks__pizza {
+        align-items: center;
+    }
+
+    .blocks__pizza>h2 {
+        width: 148px;
+        height: 64px;
+
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 133%;
+        color: #000000;
     }
 
     .flex-item__flex-container {
